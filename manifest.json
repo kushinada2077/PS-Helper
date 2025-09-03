@@ -16,6 +16,10 @@
         {
             "resources": ["src/codeforces_erase_main.js", "src/erase_utility.js"],
             "matches": ["https://codeforces.com/*"]
+        },
+        {
+            "resources": ["src/algospot_erase_main.js", "src/erase_utility.js"],
+            "matches": ["https://www.algospot.com/*"]
         }
     ],
     "content_scripts": [
@@ -39,6 +43,14 @@
         {
             "js": ["scripts/codeforces_erase.js"],
             "matches": ["https://codeforces.com/contest/*/submit*"]
+        },
+        {
+            "js": ["scripts/algospot_erase.js"],
+            "matches": ["https://www.algospot.com/judge/problem/submit/*"]
+        },
+        {
+            "js": ["scripts/algospot_input.js"],
+            "matches": ["https://www.algospot.com/judge/problem/read/*"]
         }
     ],
     "background": {
