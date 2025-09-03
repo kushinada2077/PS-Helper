@@ -2,5 +2,9 @@
     "manifest_version": 3,
     "name": "BackJoon Submit",
     "version": "1.0",
-    "description": "A helper extension for competitive programming websites."
+    "description": "A helper extension for problem solving websites.",
+    "permissions": ["downloads"],
+    "background": {
+        "service_worker": "background/background.js"
+    }
 }
