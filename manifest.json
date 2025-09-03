@@ -8,6 +8,10 @@
         {
             "resources": ["src/boj_erase_main.js", "src/erase_utility.js"],
             "matches": ["https://www.acmicpc.net/*"]
+        },
+        {
+            "resources": ["src/atcoder_erase_main.js", "src/erase_utility.js"],
+            "matches": ["https://atcoder.jp/*"]
         }
     ],
     "content_scripts": [
@@ -19,6 +23,10 @@
             "js": ["scripts/boj_input.js"],
             "matches": ["https://www.acmicpc.net/problem/*"],
             "exclude_matches": ["https://www.acmicpc.net/problem/history/*", "https://www.acmicpc.net/problem/status/*"]
+        },
+        {
+            "js": ["scripts/atcoder_input.js", "scripts/atcoder_erase.js"],
+            "matches": ["https://atcoder.jp/*/tasks/*", "https://atcoder.jp/contests/*/submit*"]
         }
     ],
     "background": {
