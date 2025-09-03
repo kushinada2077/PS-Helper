@@ -4,6 +4,23 @@
     "version": "1.0",
     "description": "A helper extension for problem solving websites.",
     "permissions": ["downloads"],
+    "web_accessible_resources": [
+        {
+            "resources": ["src/boj_erase_main.js", "src/erase_utility.js"],
+            "matches": ["https://www.acmicpc.net/*"]
+        }
+    ],
+    "content_scripts": [
+        {
+            "js": ["scripts/boj_erase.js"],
+            "matches": ["https://www.acmicpc.net/submit/*"]
+        },
+        {
+            "js": ["scripts/boj_input.js"],
+            "matches": ["https://www.acmicpc.net/problem/*"],
+            "exclude_matches": ["https://www.acmicpc.net/problem/history/*", "https://www.acmicpc.net/problem/status/*"]
+        }
+    ],
     "background": {
         "service_worker": "background/background.js"
     }
