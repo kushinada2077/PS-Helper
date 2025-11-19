@@ -20,6 +20,10 @@
         {
             "resources": ["src/algospot_erase_main.js", "src/erase_utility.js"],
             "matches": ["https://www.algospot.com/*"]
+        },
+        {
+            "resources": ["src/paiza_erase_main.js", "src/erase_utility.js"],
+            "matches": ["https://paiza.jp/*"]
         }
     ],
     "content_scripts": [
@@ -51,6 +55,10 @@
         {
             "js": ["scripts/algospot_input.js"],
             "matches": ["https://www.algospot.com/judge/problem/read/*"]
+        },
+        {
+            "js": ["scripts/paiza_input.js", "scripts/paiza_erase.js"],
+            "matches": ["https://paiza.jp/*"]
         }
     ],
     "background": {
