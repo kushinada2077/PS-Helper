@@ -58,7 +58,7 @@
         },
         {
             "js": ["scripts/paiza_input.js", "scripts/paiza_erase.js"],
-            "matches": ["https://paiza.jp/*"]
+            "matches": ["https://paiza.jp/challengs/*"]
         }
     ],
     "background": {
