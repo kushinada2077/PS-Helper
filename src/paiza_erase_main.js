@@ -2,7 +2,6 @@ import erase_my_info from "/src/erase_utility.js";
 
 export function main() {
     const $text_area = document.querySelector("#editor-div > textarea");
-    console.log("hi");
     $text_area.addEventListener(
         "paste",
         (e) => {
